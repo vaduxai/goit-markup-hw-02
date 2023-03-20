@@ -10,32 +10,102 @@ body {
   color: var(--primary-text-color);
 }
 
-/* List */
+/* Утилиты */
 .list {
-    list-style-type: none;
+    list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul, 
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    align-items: center;
 }
 
 /* Header logo */
 .header-logo {
-        font-family: 'Raleway';
-        font-size: 26px;
-        line-height: 1.192;
-        letter-spacing: 0.03em;
-        color: #000000;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 /* Navigation */
-.site-nav-link,
+.site-nav {
+    display: flex;
+}
+
+.site-nav-list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.contacts-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav-list-link,
 .contacts-list-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.02em;
-        color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: #212121;
     
         
 }
@@ -53,6 +123,12 @@ body {
 }
 
 
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Hero title */
 .hero-title {
     font-weight: 900;
@@ -66,10 +142,14 @@ body {
 
 /* Hero button */
 .hero-button {
+    display: inline-block;
+    min-width: 200px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     cursor: pointer;
+    background: #2196F3;
+    color: #fff;
 }
 
 /* Advantages title */
@@ -83,11 +163,11 @@ body {
 
 /* Services title */
 .services-title {
-        font-size: 36px;
-        line-height: 1.166;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #212121;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 /* Team title */
@@ -121,33 +201,33 @@ body {
 
 /* Footer styles */
 .footer-logo {
-        font-family: 'Raleway';
-        font-size: 26px;
-        line-height: 1.192;
-        letter-spacing: 0.03em;
-        color: #696868
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #696868
 }
 .address-list-item  {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.714;    
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;    
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 .address-list_map {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
-        color: #7c7b7b;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #7c7b7b;
 }
 .address-list-link {
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
-        color: rgba(26, 25, 25, 0.6);
-        list-style: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(26, 25, 25, 0.6);
+    list-style: none;
 }
 
 /*================== potfolio  styles ==================*/
@@ -162,29 +242,24 @@ body {
     color: var(--accent-color);
 }
 .potfolio-button-list-title {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.625;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #212121;
-        cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
 }
 .potfolio-list-title {
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
 }
 .potfolio-list-text {
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 0.03em;
-        color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
-
-
-
-
-
 
