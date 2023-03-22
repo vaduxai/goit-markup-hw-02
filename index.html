@@ -40,14 +40,17 @@
     </header>
     <!-- Hero -->
     <main>
-        <section class="hero container">
+        <section class="hero">
+            <div class="hero-warp">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero-button" type="button">Заказать услугу</button>
+            </div>
         </section>
             
 
         <!-- Our advantages -->
-        <section class="advantages">
+        <section class="advantages section">
+            <div class="container">
             <h2 class="advantages-title" hidden>>Наши приемущества</h2>
             <ul class="advantages-list list">
                 <li class="advantages-list-item">
@@ -67,12 +70,14 @@
                     <p class="advantages-list-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Our services -->
-        <section class="services">
+        <section class="services no-padding">
+            <div class="container">
             <h2 class="services-title">Чем мы занимаемся</h2>
-            <ul class="services-list">
+            <ul class="services-list list">
                 <li class="services-list-item"><a class="services-list-link" href="#">
                     <img class="services-list-img" src="./images/services/services-1.jpg"  width="370" height="294" alt="Человек печает на клавиатуре" ></a></li>
                 <li class="services-list-item"><a class="services-list-link" href="#">
@@ -80,48 +85,59 @@
                 <li class="services-list-item"><a class="services-list-link" href="#">
                     <img class="services-list-img" src="./images/services/services-3.jpg"  width="370" height="294" alt="человек выберает цвет из палитры" ></a></li>
             </ul>
-
+            </div>
         </section>
 
         <!-- Our team -->
-        <section class="team">
+        <section class="team section">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list">
+            <ul class="team-list list">
                 <li class="team-list-item">
-                    <a class="team-list-link" href="#">
+                    <a class="team-list-link list" href="#">
                         <img class="team-list-img" src="./images/team/our-team-1.jpg" width="270" height="260" alt="член команды Игорь Демьяненко дизайнер продуктов" >
+                        <div class="team-wrap">
                             <h3 class="team-list-name">Игорь Демьяненко</h3>
                             <p class="team-list-text" lang="en">Product Designer</p>
+                        </div>
                     </a>
                 </li>
                 <li class="team-list-item">
-                    <a class="team-list-link" href="#">
+                    <a class="team-list-link list" href="#">
                         <img class="team-list-img" src="./images/team/our-team-2.jpg" width="270" height="260" alt="член команды Ольга Репина фронтенд разработчик">
+                        <div class="team-wrap">
                             <h3 class="team-list-name">Ольга Репина</h3>
                             <p class="team-list-text" lang="en">Frontend Developer</p>
+                        </div>
+                        
                     </a>
                 </li>
                 <li class="team-list-item">
-                    <a class="team-list-link" href="#">
+                    <a class="team-list-link list" href="#">
                         <img class="team-list-img" src="./images/team/our-team-3.jpg" width="270" height="260" alt="член команды Николай Тарасов специалист по маркетингу">
+                        <div class="team-wrap">
                             <h3 class="team-list-name">Николай Тарасов</h3>
                             <p class="team-list-text" lang="en">Marketing</p>
+                        </div>
                     </a>
                 </li>
                 <li class="team-list-item">
-                    <a class="team-list-link" href="#">
+                    <a class="team-list-link list" href="#">
                         <img class="team-list-img" src="./images/team/our-team-4.jpg" width="270" height="260" alt="член команды Михаил Ермаков дизайнер макетов">
+                        <div class="team-wrap">
                             <h3 class="team-list-name">Михаил Ермаков</h3>
                             <p class="team-list-text" lang="en">UI Designer</p>
+                        </div>
                     </a>
                 </li>
             </ul>
-
+            </div>
         </section>
     </main>
     <!-- footer -->
     <footer class="page-footer">
-        <a class="footer-logo" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
+        <div class="container">
+        <a class="footer-logo list" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
         <address class="address">
             <ul  class="address-list list">
                 <li class="address-list-item">
@@ -135,7 +151,7 @@
                 </li>
             </ul>
         </address>
-
+        </div>
     </footer>
     
 </body>

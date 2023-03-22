@@ -19,38 +19,37 @@
 <body>
     <!-- header -->
     <header class="page-header">
-        <div class="container">
-            <nav class="site-nav">
-                <a class="header-logo" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
-                <ul class="site-nav-list list">
-                    <li class="site-nav-list-item">
-                        <a class="site-nav-list-link list" href="#">Студия</a>
-                    </li>
-                    <li class="site-nav-list-item">
-                        <a class="site-nav-list-link list" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="site-nav-list-item">
-                        <a class="site-nav-list-link list" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="contacts-list list">
-                    <li class="contacts-list-item">
-                        <a class="contacts-list-link list" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="contacts-list-item">
-                        <a class="contacts-list-link list" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="container main-nav">
+            <a class="header-logo" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
+            <ul class="site-nav-list list">
+                <li class="site-nav-list-item">
+                    <a class="site-nav-list-link list" href="#">Студия</a>
+                </li>
+                <li class="site-nav-list-item">
+                    <a class="site-nav-list-link list" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="site-nav-list-item">
+                    <a class="site-nav-list-link list" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="contacts-list list">
+                <li class="contacts-list-item">
+                    <a class="contacts-list-link list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contacts-list-item">
+                    <a class="contacts-list-link list" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <!-- Hero -->
     <main>
         <h1 hidden>Портфолио</h1>
 
         <!-- Our potfolio-->
-        <section class="potfolio">
-        <ul class="potfolio-button-list">
+        <section class="potfolio section">
+        <div class="container">
+        <ul class="potfolio-button-list list">
             <li class="potfolio-button-list-item">
                 <button  class="potfolio-button-list-title" type="button">Все</button>
             </li>
@@ -67,73 +66,93 @@
                 <button class="potfolio-button-list-title" type="button">Маркетинг</button>
             </li>
         </ul>
-        <ul class="potfolio-list">
+        <ul class="potfolio-list list">
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-1.jpg" width="370" height="294" alt="ноутбук с шаблонами">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Технокряк</h3>
                 <p class="potfolio-list-text">Веб-сайт</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-2.jpg" width="370" height="294" alt="постер о баскетболе">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                 <p class="potfolio-list-text">Дизайн</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-3.jpg" width="370" height="294" alt="логотип ресторана морепродуктов">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Ресторан <span lang="en">Seafood</span></h3>
                 <p class="potfolio-list-text">Приложение</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-4.jpg" width="370" height="294" alt="наушники">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Проект <span lang="en">Prime</span></h3>
                 <p class="potfolio-list-text">Маркетинг</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-5.jpg" width="370" height="294" alt="подарочные коробки">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Проект <span lang="en">Boxes</span></h3>
                 <p class="potfolio-list-text">Приложение</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-6.jpg" width="370" height="294" alt="монитор с загруженным сайтом">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title" lang="en">Inspiration has no Borders</h3>
                 <p class="potfolio-list-text">Веб-сайт</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-7.jpg" width="370" height="294" alt="развернутая книга издания">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Издание <span lang="en">Limited Edition</span></h3>
                 <p class="potfolio-list-text">Дизайн</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-8.jpg" width="370" height="294" alt="бирка с логотипом компании">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title">Проект <span lang="en">LAB</span></h3>
                 <p class="potfolio-list-text">Маркетинг</p>
+                </div>
             </li>
             <li class="potfolio-list-item">
                 <img class="potfolio-list-img" src="./images/portfolio/portfolio-9.jpg" width="370" height="294" alt="человек печает на ноутбуке">
+                <div class="potfolio-wrap">
                 <h3 class="potfolio-list-title" lang="en">Growing Business</h3>
                 <p class="potfolio-list-text">Приложение</p>
+                </div>
             </li>
         </ul>
+        </div>
         </section>
         
     </main>
     <!-- footer -->
     <footer class="page-footer">
-        <a class="footer-logo" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
-        <address class="address">
-            <ul class="address-list list">
-                <li class="address-list-item">
-                    <a class="address-list_map list" href="https://goo.gl/maps/CieR7h8wCb28X12m8">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="address-list-item">
-                    <a class="address-list-link list" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="address-list-item">
-                    <a class="address-list-link list" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </address>
-    
+        <div class="container">
+            <a class="footer-logo list" lang="en" href="./index.html"><span style="color: rgb(55, 0, 255);">Web</span>Studio</a>
+            <address class="address">
+                <ul class="address-list list">
+                    <li class="address-list-item">
+                        <a class="address-list_map list" href="https://goo.gl/maps/CieR7h8wCb28X12m8">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-list-link list" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-list-link list" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
